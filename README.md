@@ -38,14 +38,17 @@ npm run dev
 ```
     npx tailwindcss init
 ```
-
-3. Add file extensions to tailwind config file in the contents property
+3. Create tailwindcss postcss confige file
+```
+    npx tailwindcss init -p 
+```
+4. Add file extensions to tailwind config file in the contents property
 ```
     "./src/**/*.{html,js,jsx,ts,tsx}", "./index.html",
 
 ```
 
-4. Add the tailwind directives at the top of the `index.css` file
+5. Add the tailwind directives at the top of the `index.css` file
 
 ```
     @tailwind base;
