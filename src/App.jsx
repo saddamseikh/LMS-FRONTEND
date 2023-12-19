@@ -8,6 +8,7 @@ import Login from "./Pages/Login";
 import Contact from "./Pages/Contact";
 import CourseList from "./Pages/Course/CourseList";
 import CourseDescription from "./Pages/Course/CourseDescription";
+import CreateCourse from "./Pages/Course/CreateCourse";
 function App() {
   return (
     <>
@@ -20,6 +21,8 @@ function App() {
         <Route path="/courses" element={<CourseList />} />
 
         <Route path="/course/description" element={<CourseDescription />} />
+
+        <Route path="/course/create" element={<CreateCourse />} />
 
         {/* NotFound page path  */}
         <Route path="*" element={<NotFound />}></Route>
